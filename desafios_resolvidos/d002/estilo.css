@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Outfit-Black';
+    src: url(assets/fonts/outfit/static/Outfit-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url(assets/fonts/outfit/static/Outfit-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-ExtraBold';
+    src: url(assets/fonts/outfit/static/Outfit-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-ExtraLight';
+    src: url(assets/fonts/outfit/static/Outfit-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Outfit-Light';
+    src: url(assets/fonts/outfit/static/Outfit-Light.ttf) format('opentype') format('truetype');
+
+}
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url(assets/fonts/outfit/static/Outfit-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Outfit-SemiBold';
+    src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Outfit-Thin';
+    src: url(assets/fonts/outfit/static/Outfit-Thin.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: '';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+:root{
+    --font-1: 'Outfit-Black';
+    --font-2: 'Outfit-Bold';
+    --font-3: 'Outfit-ExtraBold';
+    --font-4: 'Outfit-ExtraLight';
+    --font-5: 'Outfit-Light';
+    --font-6: 'Outfit-Medium';
+    --font-7: 'Outfit-Regular';
+    --font-8: 'Outfit-SemiBold';
+    --font-9: 'Outfit-Thin';
+
+    --font-yougSerif: 'YoungSerif';
+    --font-variableFont: 'VariableFont';
+
+}
+body{
+    background-color: #F3E5D8;
+}
+/*Estilo para main*/
+main{
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin: 100px auto;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.055) 3px -0.5px 11px 2px
+}
+/*Estilos para tags de cabeçalho*/
+h2, h3 {
+    margin-bottom: 10px;
+}
+h1{
+    margin-top: 25px;
+    font-size: 2.3em;
+    font-family: var(--font-yougSerif), Arial, sans-serif; 
+    color: #353432;
+    font-weight: normal;
+}
+h3{
+    margin-left: 15px;
+    font-size: 1.2em;
+    font-family: var(--font-2);
+    font-weight: bold;
+    color: #732D49;
+}
+h2{
+    font-family: var(--font-yougSerif), sans-serif;
+    font-size: 1.6em;
+    color: #7e452ee1;
+
+}
+p{
+    font-family: var(--font-7);
+    color: #4E4D4B;
+    text-align: justify;
+    line-height: 1.8;
+    padding: 10px 0 15px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: auto;
+}
+/*Estilos para elementos fortes*/
+strong{
+    font-family: var(--font-2);
+    color: #5E554E;
+}
+/*Estilo para listas*/
+ul#box{
+    margin: 15px 0 18px 50px;
+    font-family: var(--font-7);
+    color: #4E4D4B;
+    line-height: 1.8;
+
+}
+ul, ol{
+    margin: 15px 0 18px 40px;
+    line-height: 1.8;
+    text-align: justify;
+
+}
+li{
+    padding-left: 15px;
+}
+ol li{
+    padding-left: 15px;
+    font-family: var(--font-4);
+    font-weight: bold;
+}
+ul{
+    font-family: var(--font-7);
+    color: #585757;
+
+}
+/*fundo do título hora de preparação*/
+.fundo{
+    margin: 25px 0 20px;
+    padding: 20px 10px 10px 10px;
+    background-color: #FFF7FC;
+    max-width: 600px;
+    border-radius: 20px;
+}
+/*Estilos para marcadores de listas*/
+li::marker{
+    color: #7E485F;
+    font-size: 0.7em;
+}
+ol li::marker{
+    font-size: 0.8em;
+    font-family: var(--font-1);
+}
+/*Estilo para linhas horizontais*/
+
+hr{
+    color: rgba(170, 170, 170, 0.363);
+    border-width: 0.1px;
+    width: calc(100% + 2px); /* Ajuste o valor conforme necessário */
+    margin: 30px 4px; /* Ajuste o valor conforme necessário */
+}
+
+/*Estilo para tabelas*/
+.tabela {
+    width: 100%;
+  }
+
+
+.linha{
+    display: flex;
+    border-width: 0.1px;
+    border-bottom: 0.1px solid  rgba(170, 170, 170, 0.363); /* Adiciona uma linha horizontal abaixo de cada linha */
+  }
+
+.celula{
+    font-family: var(--font-9);
+    font-weight: bold;
+    flex: 1;
+    padding: 15px;
+  }
+  
+
