@@ -1,0 +1,170 @@
+/*Main*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FCF8FF;
+}
+
+.benefits-items_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Fraunce", serif;
+    border: 1px solid #24053E;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    margin: 0 auto 24px auto;
+   
+}
+.benefits_items{
+    margin-bottom: 40px;
+}
+.benefits_title{
+    margin-bottom: 16px;
+}
+
+.benefits_battom{
+    height: 30px;
+    width: 100%;
+    background-color: #FCF8FF;
+    border-radius: 0 0 100% 100%;
+}
+.cta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.cta_img{
+    width: 281px;
+    height: 281px;
+}
+.cta_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #24053E;
+    color: #FCF8FF;
+    padding: 32px;
+    margin-top: -32px;
+}
+
+.cta_card-button{
+    margin: auto;
+    width: 173px;
+    text-align: center;
+}
+.cta_card-title{
+    margin-bottom: 16px;
+}
+.cta_card-description{
+    margin-bottom: 24px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 240px;
+}
+.footer_itens{
+    margin: 10px;
+}
+.footer_img{
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px){
+    .benefits_items{
+        display: flex;
+        text-align: left;
+    }
+    
+    .benefits-items_content{
+        margin-left: 32px;
+        margin-top: 24px;
+    }
+    .benefits-items_number{
+        margin: 0;
+    }
+
+    .cta{
+        align-items: flex-start;
+        width: 685px;
+        margin: auto;
+    }
+    .cta_card{
+        max-width: 510px;
+        align-self: flex-end;
+        margin-top: -125px;
+        text-align: left;
+    }
+    .cta_card-title{
+        text-align: left;
+    }
+    .container{
+        max-width: 1180px;
+        
+    }
+}
+
+
+@media (min-width: 1366px){
+    body{
+        font-family: var(--font-secundary), sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .benefits{
+        flex-direction: row;
+       
+    }
+    .benefits_items{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .benefits-items_content{
+        margin: 0;
+    }
+    .benefits-items_number{
+        margin-bottom: 56px;
+    }
+    .benefits_title{
+        margin-bottom: 28px;
+    }
+    .container{
+        max-width: 1180px;
+        margin: auto;
+        
+    }
+    .cta{
+        width: 100%;
+    }
+    .cta_card{
+        margin-top: -300px;
+        max-width: 730px;
+    }
+    .cta_img{
+        height: 477px;
+        width: 477px;
+    }
+    footer{
+        min-height: 320px;
+    }
+}

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    src: url(assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+:root{
+
+    /*------Fonts-------*/
+    --font-primary: "Fraunces";
+    --font-secundary: "Manrope";
+
+    /*-------Colors-----*/
+    --dark-1: #24053E;
+    --green-1: #44FFA1;
+    --light-gray:#584D52;
+    --ligth: #FCF8FF;
+    --white: #FFF;
+}
+
+body{
+    font-family: var(--font-secundary), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*container*/
+
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/*headers main*/
+.header_main{
+    padding-top: 32px;
+    background-color: var(--dark-1);
+    color: var(--white);
+    overflow: hidden;
+}
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 596.6px;
+    margin: 64px auto 0;
+    padding-bottom: 106px;
+}
+
+.bottom{
+    height: 60px;
+    width: 100%;
+    background-color: var(--dark-1);
+    border-radius: 0 0 100% 100%;
+    box-shadow:  0 4px 4px rgb(0, 0 , 0, 25);
+    margin-top: -1px;
+}
+
+.header_hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 155px;
+    background-color: #FCF8FF;
+}
+
+.image{
+    position: absolute;
+    max-width: 320px;
+    bottom: 10px;
+
+}
+
+/*bigs letters*/
+
+.heading_title{
+    margin-bottom: 40px;
+}
+
+
+.underline{
+    border-bottom: 3px solid var(--green-1);
+}
+
+/*page headers*/
+.header_large{ 
+    font-family: var(--font-primary), serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.header_medium{
+    font-family: var(--font-primary), serif;
+    font-size: 32px;
+}
+
+.header_small{
+    font-family: var(--font-primary), serif;
+    font-size: 28px;
+}
+
+
+.header_pattern{
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+/*Page buttons*/
+
+.btn-primary{
+    background-color: var(--green-1);
+    font-family: var(--font-primary);
+    color: var(--dark-1);
+    padding: 16px 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.5s;
+    min-width: 55px;
+}
+
+.btn-primary:hover{
+    background-color: var(--dark-1);
+    border: 1px solid var(--green-1);
+    color: var(--green-1);
+}
+
+.btn-secundary{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white);
+    border-bottom: 3px solid var(--green-1);
+    text-decoration: none;
+    transition: linear 0.2s;
+    
+}
+
+.btn-secundary:hover{
+    color: var(--green-1);
+    border-bottom: 3px solid var(--green-1);
+}
+
+/*Queries*/
+@media (min-width:768px){
+    .header_pattern{
+        display: block;
+    }
+    
+    .pattern-1{
+        position: absolute;
+        top: 60px;
+        left: -220px;
+    }
+    .pattern-2{
+        position: absolute;
+        top: 220px;
+        right: -100px;
+    
+    }
+    
+    .header_large{ 
+        font-size: 60px;
+    }
+    .header_medium{
+        font-size: 48px;
+    }
+    
+    .header_small{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 1366px){
+    
+    .pattern-1{
+        left: -120px;
+    }
+    .pattern-2{
+        right: -60px;
+    }
+    
+    .header_large{ 
+        font-size: 80px;
+    }
+    .header_medium{
+        font-size: 56px;
+    }
+    
+    .header_small{
+        font-size: 32px;
+    }
+    
+}
+
+/*Tela do telefone*/
+
+@media (min-width:768px){
+    
+    
+    .header_content{
+        padding-bottom: 203px;
+    }
+    
+    .heading_title{
+        max-width: 580px;
+    }
+    
+    .image{
+        max-width: 514px;
+        bottom: 0;
+    }
+
+}
+
+@media (min-width: 1366px){
+
+    .header_content{
+        padding-bottom: 280px;
+    }
+    
+    .heading_title{
+        max-width: 640px;
+    }
+    
+    .image{
+        max-width: 767px;
+        bottom: 30px;
+    }
+    .header_hero{
+        min-height: 200px;
+
+    }
+
+}
