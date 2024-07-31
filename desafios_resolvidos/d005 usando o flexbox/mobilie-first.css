@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    display: flex;
+}
+
+.container{
+    max-width: 375px;
+    margin: 0 auto;    
+}
+
+.wrapper {
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    margin: 2rem 1rem;
+    border-radius: 15px;
+}
+
+.main-img{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.main-img img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.main-img .overley{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.384);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.main-img .overley img{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img:hover .overley{
+    display: block;
+}
+hr{
+    border: 1px solid hsla(215, 52%, 70%, 0.336);
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.box a{
+    
+    text-decoration: none;
+    color:  hsl(0, 0%, 100%);
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.box:hover a{
+    color:  hsl(178, 100%, 50%);
+   
+}
+
+.box p{
+    color:  hsl(215, 51%, 70%);
+    
+}
+.box .box-eth p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.box .box-eth{
+    display: flex;
+}
+.box .box-eth p{
+    margin-left: 8px;
+} 
+
+.box .box-clock{
+    display: flex;
+}
+.box .box-clock p{
+    margin-left: 8px;
+}
+
+.perfil{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.perfil img{
+    display: block;
+    width: 15%;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.perfil .jules{
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.perfil .jules p{
+    color: hsl(215, 51%, 70%);
+}
+.perfil .jules a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.perfil .jules:hover a{
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
+
+
+ 
