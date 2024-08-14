@@ -1,0 +1,62 @@
+
+
+@media (min-width: 1336px){
+    body{
+        background-color: var(--verydark);
+    }
+    .card{
+        width: 70vw;
+        max-width: 1200px; /* opcional: limita a largura máxima para telas muito grandes */
+    }
+    
+    .img_main{
+        width: 50%;
+        float: right;
+        height: 100%;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 50%;
+        float: left;
+        padding: 45px;
+    }
+   
+    .container .lead h1{
+        text-align: start;
+        width: 304px;
+    }
+    .container .lead p{
+        text-align: start;
+        font-size: 12px;
+        width: 280px;
+
+    }
+    .container .lead{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin: 0;
+    }
+    .container .head{
+        text-align: start;
+    }
+    
+    .statistic{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+    }
+
+    .statistic .n1, .n2{
+        margin-right: 40px;
+    }
+    .statistic{
+        text-align: start;
+    }
+    
+  
+
+}
