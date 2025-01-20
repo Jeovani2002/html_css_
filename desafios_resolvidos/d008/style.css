@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    /* Cores */
+    --cor_principal: #172339;
+    --Grey: #49566d;
+    --Cream: #f3ede7;
+    --Cream-White: #faf8f6;
+    --Custom-Purple: #a060ff;
+    --Custom-Pink: #cb30e3;
+    --Custom-Gold: #ffa84e;
+
+    /* Fontes */
+    --fonte_primaria: "Epilogue", sans-serif;
+
+}
+body{
+    font-family: var(--fonte_primaria);
+    color: var(--Cream-White);
+        
+}
+main{
+    color: black;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 4px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+header button{
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: #faf8f6;
+    color: black;
+}
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.content_hero p{
+    max-width: 343px;
+    text-align: justify;
+    padding: 32px 0;
+}
+.content_hero h1{
+    text-align: center;
+    max-width: 343px;
+    font-size: 38px;
+}
+.padding1{
+    margin: 24px 16px 56px;
+}
+
+.banner{
+    padding: 55px 0;
+}
+
+.caixa_3{
+    width: 100%;
+    border: 1px solid black;
+}
+.item{
+    
+    text-align: center;
+    border: 1px solid black;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.margin_item{
+    margin: 32px 0;
+}
