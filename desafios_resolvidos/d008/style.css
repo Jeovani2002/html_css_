@@ -21,7 +21,7 @@
 }
 body{
     font-family: var(--fonte_primaria);
-    color: var(--Cream-White);
+    color: var(--Cream);
         
 }
 main{
@@ -30,18 +30,42 @@ main{
 header{
     display: flex;
     flex-flow: row nowrap;
+    align-items: start;
     padding: 4px 0;
     justify-content: space-between;
-    border: 1px solid black;
+    margin: 24px 0 56px;
+    padding: 4px 16px;
+}
+header img{
+    flex: 0 0 auto;
+    width: 55px;
+}
+.curved_line{
+    position: absolute;
+    right: 53px;
+    top: 112px;
+    width: 151px;
 }
 header button{
+    width: 175px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
     padding: 12px 16px;
     border: 1px solid;
     border-radius: 6px;
     background-color: #faf8f6;
     color: black;
+}
+header button:hover{
+    background-color: #172339;
+    color: #faf8f6;
+    cursor: pointer;
+}
+.mini_content{
+    max-width: 343px;
 }
 .content{
     display: flex;
@@ -49,17 +73,23 @@ header button{
     align-items: center;
 }
 .content_hero p{
-    max-width: 343px;
-    text-align: justify;
-    padding: 32px 0;
+    color: var(--Grey);
+    line-height: 28px;
+    padding: 2rem 0rem;
 }
-.content_hero h1{
+span{
+    font-weight: bold;
+}
+title{
     text-align: center;
-    max-width: 343px;
-    font-size: 38px;
+}
+.title h1{
+    font-size: 2.375rem;
+    color: var(--Dark-Blue);
+    font-weight: 500;
 }
 .padding1{
-    margin: 24px 16px 56px;
+    margin: 0px 16px 56px;
 }
 
 .banner{
@@ -81,3 +111,41 @@ header button{
 .margin_item{
     margin: 32px 0;
 }
+
+.card-box{
+    position: relative;
+    width: 100%;
+    margin-top: 240px;
+    background-color: #172339;
+    border-radius: 20px 20px 0 0;
+    z-index: -1;
+
+}
+.blur img {
+    display: block;
+}
+.blur{
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%);
+   
+}
+.jeremy-1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.jeremy-1 img{
+    position: relative;
+    top: -112px;
+    display: block;
+    z-index: 1;
+}
+.curva-box{
+    width: 49.9px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -180%);
+}
+
