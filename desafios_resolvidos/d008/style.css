@@ -25,6 +25,9 @@ body{
         
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
 }
 header{
@@ -40,10 +43,20 @@ header img{
     flex: 0 0 auto;
     width: 55px;
 }
+.title{
+    position: relative;
+
+}
 .curved_line{
     position: absolute;
-    right: 53px;
-    top: 112px;
+    bottom: 80px;
+    left: 149px;
+  
+}
+.curved_line img{
+    display: block;
+    width: 100%;
+    height: 19px;
     width: 151px;
 }
 header button{
@@ -64,12 +77,32 @@ header button:hover{
     color: #faf8f6;
     cursor: pointer;
 }
+
+.transparente_beta_btn{
+    background-color: var(--cor_principal);
+    color: var(--Cream-White);
+    padding: 0.938rem 1.969rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.transparente_beta_btn:hover{
+    background: linear-gradient(
+    130deg,
+    var(--Custom-Purple),
+    var(--Custom-Pink),
+    var(--Custom-Gold)
+  );
+    
+}
 .mini_content{
     max-width: 343px;
 }
 .content{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
 }
 .content_hero p{
@@ -83,9 +116,15 @@ span{
 title{
     text-align: center;
 }
+.legend{
+    color: var(--Grey);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 .title h1{
     font-size: 2.375rem;
-    color: var(--Dark-Blue);
+    color: var(--cor_principal);
     font-weight: 500;
 }
 .padding1{
@@ -95,15 +134,22 @@ title{
 .banner{
     padding: 55px 0;
 }
-
+.banner .img_desktop{
+    display: none;
+}
+.epilogue_number{
+    font-size: 3rem;
+    color: var(--cor_principal);
+}
 .caixa_3{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border: 1px solid black;
 }
 .item{
-    
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    border: 1px solid black;
     flex-shrink: 1;
     flex-grow: 1;
 }
@@ -117,18 +163,22 @@ title{
     width: 100%;
     margin-top: 240px;
     background-color: #172339;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     z-index: -1;
 
 }
 .blur img {
     display: block;
+    width: 350px;
+
 }
 .blur{
+    max-width: 100%;
     position: absolute;
-    top: -120px;
+    top: -132px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+
    
 }
 .jeremy-1{
@@ -147,5 +197,140 @@ title{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -180%);
+}
+
+.work-box{
+    text-align: center;
+    padding-top: 2.5rem;
+    width: 343px;
+    margin: 0 auto;
+
+}
+.work-box h2{
+    font-size: 2.5rem;
+    color: var(--Cream-White);
+    font-weight: 500;
+    padding-top: 2.313rem;
+    padding-bottom: 2.5rem;
+}
+.work-box p{
+    text-align: center;
+    color: var(--Cream);
+    font-size: 1.125rem;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+
+}
+.h3-box{
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 10px;
+}
+.jr{
+    transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    font-size: 1.125rem;
+    color: var(--Cream-White);
+}
+.undertext{
+    color: var(--Cream);
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    font-weight: 300;
+}
+
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 56px 0 80px;
+    gap: 33px;
+    width: 100%;
+
+}
+footer .footer_suite  img{ 
+    display: flex;
+    height: 100%; /* Mantém a proporção da imagem */
+    width: 100%;
+    
+}
+footer .copy p{
+    display: flex;
+    color: #000000;
+}
+footer .social_media{
+    display: flex;
+    gap: 28px;
+}
+
+.epilogue_bold{
+    font-weight: bold;
+}
+
+
+/*Medias quiries*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        margin: 0; 
+        gap: 32px;
+    }
+    .caixa_3{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        grid-column: 1 / span 2;
+        padding-top: 5.5rem;
+        width: 100%;
+    }
+    .caixa_3 .margin_item{
+        margin: 0;
+    }
+    .caixa_3 .item{
+        
+    }
+    .title h1{
+        font-size: 3.5rem;
+        font-weight: 500;
+        min-width: 516px;
+
+    }
+    .img_tablet{
+        display: block;
+        height: 482px;
+        border-radius: 15px;
+        max-width: 281px;
+    }
+    .banner{
+    
+        padding: 0;        
+    }
+    .banner .img_tablet{
+        display: none;
+       justify-self: center;
+    }
+    .banner .img_desktop{
+        display: block;
+        width: 281px;
+    }
+    .curved_line{
+        position: absolute;
+        bottom: 120px;
+        left: 214px;
+      
+    }
+    .curved_line img{
+        display: block;
+        height: 29px;
+        width: 231.19px;
+    }
 }
 

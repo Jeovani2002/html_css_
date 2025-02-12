@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suite landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon-32x32.png">
 </head>
 <body>
+    <header class="">
+        <img src="assets/logo.svg" alt="">
+        <button>Request Beta Acess</button>
+    </header>
     <main class="">
-        <header class="">
-            <img src="assets/logo.svg" alt="">
-            <button>Request Beta Acess</button>
-            <img class="curved_line" src="assets/pattern-curved-line-1.svg" alt="curved line">
-        </header>
         <section class="content padding1">
             <div class="mini_content">
                 <div class="title">
-                    <h1>A <span>super solucion</span> for you <span>business</span></h1>
+                    <div class="curved_line"><img class="" src="assets/pattern-curved-line-1.svg" alt="curved line"></div>
+                    <h1>A <span>super solution</span> for your <span>business.</span></h1>
                 </div>
                 <div class="content_hero">
-                    <img src="assets/" alt="">
                     <p>Our marketing and sales automations help you scale your outreach to get more leads for your company.</p>
                     <button class="transparente_beta_btn">Request Beta Access</button>
                 </div>
             </div>
             <div class="banner">
-                <img src="assets/image-hero-landscape.png" alt="">
-            </div >
+               <picture>
+                <source media="(min-width: 768px) and (max-width: 1200px)" srcset="assets/image-hero-portrait@2x.png">
+                <img class="img_tablet" src="assets/image-hero-landscape.png" alt="">
+               </picture>
+               <img class="img_desktop" src="assets/image-hero-portrait@2x.png" alt="">
+
+            </div>
             <div class="caixa_3">
                 <div class="item">
-                    <p>2k</p>                  
-                    <p>COMPANIES</p>
+                    <span class="epilogue_number">2k</span>                  
+                    <span class="legend">COMPANIES</span>
                 </div>
                 <div class="item margin_item">
-                    <p>8</p>                  
-                    <p>LANGUAGUES</p>
+                    <span class="epilogue_number">8</span>                  
+                    <span class="legend">LANGUAGUES</span>
                 </div>
                 <div class="item">
-                    <p>1.2M</p>                  
-                    <p>LEAD</p>
+                    <span class="epilogue_number">1.2M</span>                  
+                    <span class="legend">LEAD</span>
                 </div>
             </div>
             
-            <div></div>
         </section>
         <div class="card-box">
             <div class="jeremy-1">
@@ -55,17 +61,30 @@
             </div>
             <img class="curva-box" src="assets/pattern-curved-line-2.svg" alt="">
             <div class="work-box">
-                <h2>It Just works</h2>
+                <h2>It Just <span class="epilogue_bold">works</span></h2>
                 <p>“I really like how it is an all-in-one solution that handle many of the tasks that you would normally
                 need
                 separate tools to do the same job. This thing is a miracle worker.”</p>
                 <div class="h3-box">
-                    <h3>JEREMY ROBINSON</h3>
-                    <p>CMO, FYLO</p>
+                    <h3 class="jr">JEREMY ROBINSON</h3>
+                    <p class="undertext" >CMO, FYLO</p>
                 </div>
             </div>
         </div>
 
     </main>
+    <footer>
+        <div class="footer_suite">
+            <img src="assets/logo.svg" alt="">
+        </div>
+        <div class="copy">
+            <p>Copyright - Suite</p>
+        </div>
+        <div class="social_media">
+            <img src="assets/icon-facebook.svg" alt="facebook">
+            <img src="assets/icon-instagram.svg" alt="twitter">
+            <img src="assets/icon-twitter.svg" alt="instagram">
+        </div>
+    </footer>
 </body>
 </html>
